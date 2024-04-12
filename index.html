@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        nav {
+            background-color: #92C2B0; /* Verde turquesa */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+        nav img {
+            max-height: 50px;
+        }
+        nav div {
+            display: flex;
+            align-items: center;
+        }
+        h6{
+            text-shadow: 1px 3px 7px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        p{
+            text-align: justify;
+        }
+        .dark-section {
+            background-color: #92C2B0;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .align-middle {
+            vertical-align: middle;
+        }
+        /* Animación de botón */
+        .btn-animate {
+            transition: transform 0.3s ease;
+        }
+        .btn-animate:hover {
+            transform: scale(1.1);
+        }
+        .btn-clicked {
+            animation: pulse 0.5s;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        /* Estilo de la card */
+        .card {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            margin-bottom: 20px;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* Estilo del botón */
+        .btn-download {
+            width: 200px;
+        }
+
+        img{
+            width: 45%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .margen{
+            margin-left: 5%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div>
+            <img src="logo.png" alt="Logo">
+            <h6>Ahorro Próspero</h6>
+        </div>
+    </nav>
+
+    <!-- Video -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col">
+                <iframe width="100%" height="630" src="https://www.youtube.com/embed/XJYjaJmOx2k?si=qOyeWU8kOPkC8skB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Mision y Vision-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Misión</h2>
+                <p class="text-justify">Nuestra misión en Ahorro Próspero es empoderar a las personas para que tomen el control de su bienestar financiero mediante una aplicación móvil intuitiva y personalizada. Nos dedicamos a proporcionar herramientas y conocimientos que permitan a nuestros usuarios administrar eficazmente sus finanzas, fomentar hábitos financieros saludables y alcanzar sus metas económicas a largo plazo. Buscamos ser un socio confiable en el viaje hacia la estabilidad financiera, ofreciendo soluciones innovadoras y accesibles que impulsen un cambio positivo en la vida de las personas y en la sociedad en general.
+                </div>
+            <div class="col-md-6 ">
+                <h2>Visión</h2>
+                <p class="text-justify">En Ahorro Próspero, visualizamos un futuro donde todas las personas tienen el conocimiento y las herramientas necesarias para tomar decisiones financieras informadas y alcanzar su pleno potencial económico. Nos esforzamos por ser líderes en el campo de la gestión financiera personal, brindando una plataforma móvil que se adapta a las necesidades individuales de cada usuario y que les permite navegar con confianza en el complejo mundo de las finanzas. Aspiramos a ser reconocidos como un motor de cambio positivo, promoviendo una cultura de responsabilidad financiera y contribuyendo a un mundo donde todos puedan disfrutar de una vida económica próspera y segura.
+                </div>
+        </div>
+    </div>
+
+
+    <!--Organigrama-->
+    <div class="container mt-5">
+        <h2 class="text-center">Conoce al equipo</h2>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="Diana.jpeg" alt="">
+                <div class="margen">
+                    <h5>Diana Pacheco Hernández</h5>
+                    <p>Lider del proyecto</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="Jyordi.jpeg" alt="">
+                <div class="margen">
+                    <h5>Jyordi Daniel Martínez Jiménez</h5>
+                    <p>Programador Back-End</p>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="Noemi.jpg" alt="">
+                <div class="margen">
+                    <h5>Noemí Citlalli Martínez Arango</h5>
+                    <p>Programadora Front-End</p>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+                <img src="Oscar.jpeg" alt="">
+                <div class="margen">
+                    <h5>Oscar de Jesús Ricci López</h5>
+                    <p>Diseñador</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Fin de página -->
+<div class="dark-section mt-3">
+    <div class="icon-bg"></div> <!-- Div para los iconos de fondo -->
+    <a href="app-debug.apk" download="app-debug.apk" class="btn btn-outline-light btn-animate" onclick="animateButton(this)">Descargar App</a>
+    <br>
+    <br>
+
+    <a href="mailto:prosperoahorro@gmail.com" class="btn btn-outline-light btn-animate" target="_blank" onclick="animateButton(this)">
+        <svg class="bi bi-envelope align-middle" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+        </svg>
+        Escribir correo
+    </a>
+</div>
+
+<script>
+    function animateButton(btn) {
+        btn.classList.add('btn-clicked');
+        setTimeout(function() {
+            btn.classList.remove('btn-clicked');
+        }, 500);
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
